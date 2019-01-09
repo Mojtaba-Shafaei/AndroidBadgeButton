@@ -3,4 +3,4 @@
 
 
 
-![sample AndroidToolbarBadgeButton image](//app//sampleImages//Screenshot_1.png)
+![sample AndroidToolbarBadgeButton image](https://github.com/Mojtaba-Shafaei/AndroidBadgeButton/blob/master/sampleImges/Screenshot_1.png)
