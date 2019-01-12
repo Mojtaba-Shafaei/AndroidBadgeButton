@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.IdRes;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatImageView;
@@ -90,7 +92,7 @@ public void setBadgeBackgroundColor(int color) {
 tvBadge.setBackgroundColor(color);
 }
 
-public void setBadgeBackgroundResource(int resId) {
+public void setBadgeBackgroundResource(@DrawableRes int resId) {
 tvBadge.setBackgroundResource(resId);
 }
 
