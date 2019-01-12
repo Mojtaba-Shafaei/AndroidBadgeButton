@@ -21,5 +21,6 @@ Set Badge text. Its better to ellipse number greater than 99 to 99+
 ## Xml attributes 
 
 If you want to declare attributed in XML file, set below attrs as :
+- `android:src` format: Drawable of button(Icon)
 - `app:badgeBackground`  format: ColorStateList, Color, or Drawable
 - `app:textColor` format: ColorStateList, Color

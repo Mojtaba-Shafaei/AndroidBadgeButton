@@ -5,7 +5,6 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.IdRes;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatImageView;
@@ -49,13 +48,13 @@ if (bg != 0) {
 tvBadge.setBackgroundResource(bg);
 }
 
-int icon = a.getResourceId(R.styleable.BadgeButton_android_src, 0);
-if (icon != 0) {
-ivIcon.setImageResource(icon);
+if (a.hasValue(R.styleable.BadgeButton_android_src)) {
+Drawable icon = a.getDrawable(R.styleable.BadgeButton_android_src);
+ivIcon.setImageDrawable(icon);
 }
 
+if (a.hasValue(R.styleable.BadgeButton_textColor)) {
 int textColor = a.getResourceId(R.styleable.BadgeButton_textColor, 0);
-if (icon != 0) {
 tvBadge.setTextColor(ContextCompat.getColorStateList(context, textColor));
 }
 

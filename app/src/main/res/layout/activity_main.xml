@@ -29,7 +29,9 @@
       android:layout_height="wrap_content"
       android:src="@drawable/ic_feedback_white_24dp"
       app:badgeBackground="@drawable/bgs_1"
-      app:textColor="@color/colors_1"/>
+      app:textColor="@color/colors_1"
+      tools:layout_editor_absoluteX="64dp"
+      tools:layout_editor_absoluteY="4dp"/>
 
     <com.mojtaba_shafaei.androidToolbarBadgeButton.BadgeButton
       android:id="@+id/btnBadge3"
