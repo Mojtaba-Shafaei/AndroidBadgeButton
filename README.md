@@ -25,4 +25,4 @@
 |`android:src`   | Drawable of button(Icon)   |`public void setBadgeDrawable(Drawable drawable)` |
 | :------------ | :------------ | :------------ |
 |`app:badgeBackground`   |  ColorStateList, Color, or Drawable  | `public void setBadgeBackgroundDrawable(Drawable drawable)`|
-| `app:textColor`   |   ColorStateList, Color |`public void setBadgeTextColor(ColorStateList colorStateList)` |
+| `android:textColor`   |   ColorStateList, Color |`public void setBadgeTextColor(ColorStateList colorStateList)` |
