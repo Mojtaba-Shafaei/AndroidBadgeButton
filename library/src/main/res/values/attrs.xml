@@ -3,6 +3,6 @@
   <declare-styleable name="BadgeButton">
     <attr name="android:src"/>
     <attr format="reference" name="badgeBackground"/>
-    <attr format="reference" name="textColor"/>
+    <attr name="android:textColor"/>
   </declare-styleable>
 </resources>

@@ -54,8 +54,8 @@ Drawable icon = a.getDrawable(R.styleable.BadgeButton_android_src);
 ivIcon.setImageDrawable(icon);
 }
 
-if (a.hasValue(R.styleable.BadgeButton_textColor)) {
-int textColor = a.getResourceId(R.styleable.BadgeButton_textColor, 0);
+if (a.hasValue(R.styleable.BadgeButton_android_textColor)) {
+int textColor = a.getResourceId(R.styleable.BadgeButton_android_textColor, 0);
 tvBadge.setTextColor(ContextCompat.getColorStateList(context, textColor));
 }
 
