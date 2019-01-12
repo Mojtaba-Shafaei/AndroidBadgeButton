@@ -8,8 +8,7 @@
 
 ## Methods
 
- - `public void setBadgeNum(String text)`
-Set Badge text. Its better to ellipse number greater than 99 to 99+
+- `public void setBadgeNum(String text)`
 - `public void setBadgeBackgroundDrawable(Drawable drawable)`
 - `public void setBadgeBackgroundColor(int color)`
 - `public void setBadgeBackgroundResource(@DrawableRes int resId)`
@@ -21,10 +20,9 @@ Set Badge text. Its better to ellipse number greater than 99 to 99+
 - `public void setBadgeImageBitmap(Bitmap bitmap)`
 
 
-## Xml attributes
+## Xml attributes 
 
-If you want to declare attributed in XML file, set below attrs as :
-- `android:src`             : Drawable of button(Icon)
-- `app:badgeBackground`     : ColorStateList, Color, or Drawable
-- `app:textColor`           : ColorStateList, Color
-
+|`android:src`   | Drawable of button(Icon)   |`public void setBadgeDrawable(Drawable drawable)` |
+| :------------ | :------------ | :------------ |
+|`app:badgeBackground`   |  ColorStateList, Color, or Drawable  | `public void setBadgeBackgroundDrawable(Drawable drawable)`|
+| `app:textColor`   |   ColorStateList, Color |`public void setBadgeTextColor(ColorStateList colorStateList)` |
