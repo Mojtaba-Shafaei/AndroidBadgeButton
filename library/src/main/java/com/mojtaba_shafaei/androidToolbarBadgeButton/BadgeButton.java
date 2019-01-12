@@ -3,6 +3,7 @@ package com.mojtaba_shafaei.androidToolbarBadgeButton;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.constraint.ConstraintLayout;
@@ -71,6 +72,9 @@ ivIcon = findViewById(R.id.iv_icon);
 tvBadge = findViewById(R.id.tv_badge);
 }
 
+/**
+ * @param text if text is empty or null, badgeText will hide. In other hands (even text == '0') badge will be shown.
+ */
 public void setBadgeNum(String text) {
 if (text == null || text.isEmpty()) {
 tvBadge.setVisibility(GONE);
@@ -104,6 +108,19 @@ tvBadge.setTextColor(colorStateList);
  */
 public void setBadgeTextColor(int color) {
 tvBadge.setTextColor(color);
+}
+
+
+public void setBadgeDrawable(Drawable drawable) {
+ivIcon.setImageDrawable(drawable);
+}
+
+public void setBadgeImageResource(@DrawableRes int idRes) {
+ivIcon.setImageResource(idRes);
+}
+
+public void setBadgeImageBitmap(Bitmap bitmap) {
+ivIcon.setImageBitmap(bitmap);
 }
 
 @Override
