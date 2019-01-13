@@ -26,3 +26,7 @@
 | :------------ | :------------ | :------------ |
 |`app:badgeBackground`   |  ColorStateList, Color, or Drawable  | `public void setBadgeBackgroundDrawable(Drawable drawable)`|
 | `android:textColor`   |   ColorStateList, Color |`public void setBadgeTextColor(ColorStateList colorStateList)` |
+
+
+## Installation
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AndroidBadgeButton-green.svg?style=flat )]( https://android-arsenal.com/details/1/7449 )
