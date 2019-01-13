@@ -30,3 +30,6 @@
 
 ## Installation
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AndroidBadgeButton-green.svg?style=flat )]( https://android-arsenal.com/details/1/7449 )
+
+[![](https://jitpack.io/v/mojtaba-shafaei/androidbadgebutton.svg)](https://jitpack.io/#mojtaba-shafaei/androidbadgebutton)
+
