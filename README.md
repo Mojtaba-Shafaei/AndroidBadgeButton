@@ -15,14 +15,14 @@
 - `public void setBadgeTextColor(ColorStateList colorStateList)`
 - `public void setBadgeTextColor(int color)`
 - `public void setEnabled(boolean enabled)`
-- `public void setBadgeDrawable(Drawable drawable)`
-- `public void setBadgeImageResource(@DrawableRes int idRes)`
-- `public void setBadgeImageBitmap(Bitmap bitmap)`
+- `public void setIcon(Drawable drawable)`
+- `public void setIcon(@DrawableRes int idRes)`
+- `public void setIcon(Bitmap bitmap)`
 
 
 ## Xml attributes 
 
-|`android:src`   | Drawable of button(Icon)   |`public void setBadgeDrawable(Drawable drawable)` |
+|`android:src`   | Drawable of button(Icon)   |`public void setIcon(Drawable drawable)` |
 | :------------ | :------------ | :------------ |
 |`app:badgeBackground`   |  ColorStateList, Color, or Drawable  | `public void setBadgeBackgroundDrawable(Drawable drawable)`|
 | `app:textColor`   |   ColorStateList, Color |`public void setBadgeTextColor(ColorStateList colorStateList)` |
