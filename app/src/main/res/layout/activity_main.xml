@@ -18,18 +18,18 @@
       android:id="@+id/btn_badge1"
       android:layout_width="48dp"
       android:layout_height="48dp"
-      android:src="@drawable/ic_favorite_white_24dp"
-      android:textColor="@android:color/white"
       app:badgeBackground="@drawable/bgs_1"
+      app:icon="@drawable/ic_phone_white_24dp"
+      app:textColor="@android:color/white"
       />
 
     <com.mojtaba_shafaei.androidToolbarBadgeButton.BadgeButton
       android:id="@+id/btnBadge2"
       android:layout_width="48dp"
       android:layout_height="48dp"
-      android:src="@drawable/ic_feedback_white_24dp"
-      android:textColor="@color/colors_1"
       app:badgeBackground="@drawable/bgs_1"
+      app:icon="@drawable/ic_feedback_white_24dp"
+      app:textColor="@color/colors_1"
       tools:layout_editor_absoluteX="64dp"
       tools:layout_editor_absoluteY="4dp"/>
 
@@ -37,9 +37,9 @@
       android:id="@+id/btnBadge3"
       android:layout_width="48dp"
       android:layout_height="48dp"
-      android:src="@drawable/ic_motorcycle_white_24dp"
-      android:textColor="@color/colors_1"
-      app:badgeBackground="@drawable/bg_badge"/>
+      app:badgeBackground="@drawable/bg_badge"
+      app:icon="@drawable/ic_motorcycle_white_24dp"
+      app:textColor="@color/colors_1"/>
 
   </androidx.appcompat.widget.Toolbar>
 </LinearLayout>

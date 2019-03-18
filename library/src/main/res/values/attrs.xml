@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <declare-styleable name="BadgeButton">
-    <attr name="android:src"/>
+    <attr format="reference" name="icon"/>
     <attr format="reference" name="badgeBackground"/>
-    <attr name="android:textColor"/>
+    <attr name="textColor"/>
   </declare-styleable>
 </resources>

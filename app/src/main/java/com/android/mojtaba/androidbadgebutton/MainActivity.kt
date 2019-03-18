@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
-    btn_badge1.setIcon(R.drawable.ic_phone_white_24dp)
+//    btn_badge1.setIcon(R.drawable.ic_phone_white_24dp)
 
     btn_badge1.setBadgeNum("9+")
     btn_badge1.isEnabled = false

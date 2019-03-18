@@ -39,14 +39,14 @@ class BadgeButton : FrameLayout {
         tv_badge.setBackgroundResource(bg)
       }
 
-      if (a.hasValue(R.styleable.BadgeButton_android_src)) {
-        val icon = a.getResourceId(R.styleable.BadgeButton_android_src, 0)
+      if (a.hasValue(R.styleable.BadgeButton_icon)) {
+        val icon = a.getResourceId(R.styleable.BadgeButton_icon, 0)
         if (icon != 0)
           iv_icon.setImageResource(icon)
       }
 
-      if (a.hasValue(R.styleable.BadgeButton_android_textColor)) {
-        val textColor = a.getResourceId(R.styleable.BadgeButton_android_textColor, 0)
+      if (a.hasValue(R.styleable.BadgeButton_textColor)) {
+        val textColor = a.getResourceId(R.styleable.BadgeButton_textColor, 0)
         tv_badge.setTextColor(ContextCompat.getColorStateList(context, textColor))
       }
 
