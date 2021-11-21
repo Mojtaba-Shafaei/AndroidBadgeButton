@@ -1,8 +1,19 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
-/*apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.Mojtaba-Shafaei'*/
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+group = 'com.github.jitpack'
+version = "$rootProject.ext.version_name"
 
 android {
     compileSdkVersion 31
@@ -38,4 +49,18 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.Mojtaba-Shafaei'
+              //  artifactId = 'AndroidBadgeButton'
+                version = "$rootProject.ext.version_name"
+            }
+        }
+    }
 }
