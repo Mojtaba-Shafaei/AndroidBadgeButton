@@ -2,9 +2,7 @@
 # AndroidToolbarBadgeButton
 **A customizable square button to use as toolbar button with badge number.**
 
-
-
-![sample AndroidToolbarBadgeButton image](https://github.com/Mojtaba-Shafaei/AndroidBadgeButton/blob/master/sampleImges/Screenshot_1.png)
+![sample AndroidToolbarBadgeButton image](https://github.com/Mojtaba-Shafaei/AndroidBadgeButton/blob/master/sampleImges/1.2.2.jpg)
 
 ## Methods
 
