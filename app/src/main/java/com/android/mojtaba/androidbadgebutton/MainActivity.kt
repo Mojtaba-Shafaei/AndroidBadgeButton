@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     binding.btnBadge1.isEnabled = false
 
     binding.btnBadge2.setBadgeNum("5")
-    binding.btnBadge3.setBadgeNum("8")
+    binding.btnBadge3.setBadgeNum("6")
 
     binding.btnBadge3.setOnClickListener{
       binding.btnBadge3.setBadgeTextColor(Color.RED)
