@@ -1,21 +1,29 @@
 package com.android.mojtaba.androidbadgebutton
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.android.mojtaba.androidbadgebutton.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+  private lateinit var binding: ActivityMainBinding
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    binding = ActivityMainBinding.inflate(layoutInflater)
+    setContentView(binding.root)
 
 //    btn_badge1.setIcon(R.drawable.ic_phone_white_24dp)
 
-    btn_badge1.setBadgeNum("9+")
-    btn_badge1.isEnabled = false
+    binding.btnBadge1.setBadgeNum("9+")
+    binding.btnBadge1.isEnabled = false
 
-    btnBadge2?.setBadgeNum("5")
-    btnBadge3.setBadgeNum("16")
+    binding.btnBadge2.setBadgeNum("5")
+    binding.btnBadge3.setBadgeNum("16")
+
+    binding.btnBadge3.setOnClickListener{
+      binding.btnBadge3.setBadgeTextColor(Color.RED)
+      binding.btnBadge3.setBadgeBackgroundColor(Color.TRANSPARENT)
+    }
   }
 }

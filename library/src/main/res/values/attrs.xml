@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <declare-styleable name="BadgeButton">
-    <attr format="reference" name="icon"/>
-    <attr format="reference" name="badgeBackground"/>
-    <attr name="textColor"/>
+    <attr name="icon" format="reference" />
+    <attr name="badgeBackground" format="reference" />
+    <attr name="badgeTextColor" format="color" />
   </declare-styleable>
 </resources>
