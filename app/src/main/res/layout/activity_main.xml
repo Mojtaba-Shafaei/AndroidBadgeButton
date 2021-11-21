@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
@@ -19,27 +18,25 @@
       android:layout_width="48dp"
       android:layout_height="48dp"
       app:badgeBackground="@drawable/bgs_1"
-      app:icon="@drawable/ic_phone_white_24dp"
       app:badgeTextColor="@android:color/white"
-      />
+      app:icon="@drawable/ic_phone_white_24dp" />
 
     <com.mojtaba_shafaei.androidToolbarBadgeButton.BadgeButton
       android:id="@+id/btnBadge2"
       android:layout_width="48dp"
       android:layout_height="48dp"
       app:badgeBackground="@drawable/bgs_1"
-      app:icon="@drawable/ic_feedback_white_24dp"
       app:badgeTextColor="@color/colors_1"
+      app:icon="@drawable/ic_feedback_white_24dp"
       tools:layout_editor_absoluteX="64dp"
-      tools:layout_editor_absoluteY="4dp"/>
+      tools:layout_editor_absoluteY="4dp" />
 
     <com.mojtaba_shafaei.androidToolbarBadgeButton.BadgeButton
       android:id="@+id/btnBadge3"
       android:layout_width="48dp"
       android:layout_height="48dp"
-      app:badgeBackground="@drawable/badge_background_oval_red"
-      app:icon="@drawable/ic_motorcycle_white_24dp"
-      app:badgeTextColor="@color/colors_1"/>
+      app:badgeBackground="@drawable/badge_background_semi_oval_red"
+      app:icon="@drawable/ic_outline_notifications_24" />
 
   </androidx.appcompat.widget.Toolbar>
 </LinearLayout>

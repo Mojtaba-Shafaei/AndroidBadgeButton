@@ -18,6 +18,7 @@
 - `public void setIcon(Drawable drawable)`
 - `public void setIcon(@DrawableRes int idRes)`
 - `public void setIcon(Bitmap bitmap)`
+- `fun setTypeFace(typeface: Typeface)`
 
 
 ## Xml attributes 
@@ -29,6 +30,20 @@
 
 
 ## Installation
+```groovy
+allprojects {
+		repositories {
+		
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```groovy
+dependencies {
+    implementation 'com.github.mojtaba-shafaei:androidbadgebutton:last-version'
+}
+```
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AndroidBadgeButton-green.svg?style=flat )]( https://android-arsenal.com/details/1/7449 )
 
 [![](https://jitpack.io/v/mojtaba-shafaei/androidbadgebutton.svg)](https://jitpack.io/#mojtaba-shafaei/androidbadgebutton)

@@ -4,9 +4,8 @@
   android:id="@+id/badgeButtonRoot"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:minHeight="48dp"
   android:minWidth="48dp"
-  >
+  android:minHeight="48dp">
 
   <ImageView
     android:id="@+id/iv_icon"
@@ -15,26 +14,26 @@
     android:clickable="false"
     android:contentDescription=""
     android:scaleType="centerInside"
-    tools:src="@tools:sample/avatars"/>
+    tools:src="@tools:sample/avatars" />
 
   <TextView
     android:id="@+id/tv_badge"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="4dp"
-    android:layout_marginRight="4dp"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
     android:layout_gravity="right|top"
-    android:padding="2dp"
-    android:background="@drawable/bg_badge"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/badge_background_semi_oval_red"
     android:clickable="false"
     android:ellipsize="end"
     android:gravity="center"
     android:maxLength="2"
-    android:textColor="#FFFFFFFF"
+    android:padding="2dp"
+    android:textColor="#FFF"
     android:textIsSelectable="false"
-    android:textSize="12sp"
+    android:textSize="9sp"
     android:visibility="invisible"
     tools:text="9+"
-    tools:visibility="visible"/>
+    tools:visibility="visible" />
 
 </merge>
