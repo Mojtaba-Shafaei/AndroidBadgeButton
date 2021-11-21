@@ -18,12 +18,12 @@
 
   <TextView
     android:id="@+id/tv_badge"
-    android:layout_width="20dp"
-    android:layout_height="20dp"
+    android:layout_width="16dp"
+    android:layout_height="16dp"
     android:layout_gravity="right|top"
     android:layout_marginTop="1dp"
     android:layout_marginRight="1dp"
-    android:background="@drawable/badge_background_semi_oval_red"
+    android:background="@drawable/badge_background_semi_oval_red_left"
     android:clickable="false"
     android:ellipsize="end"
     android:gravity="center"
@@ -31,7 +31,7 @@
     android:padding="2dp"
     android:textColor="#FFF"
     android:textIsSelectable="false"
-    android:textSize="9sp"
+    android:textSize="10sp"
     android:visibility="invisible"
     tools:text="9+"
     tools:visibility="visible" />

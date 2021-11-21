@@ -9,8 +9,10 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
+import androidx.annotation.ColorInt
 import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
 import com.mojtaba_shafaei.android.androidToolbarBadgeButton.R
 import com.mojtaba_shafaei.android.androidToolbarBadgeButton.databinding.BadgeButtonLayoutBinding
 
@@ -60,8 +62,8 @@ class BadgeButton : FrameLayout {
 
     private fun init(context: Context) {
         _binding = BadgeButtonLayoutBinding.inflate(
-                LayoutInflater.from(context),
-                this,
+            LayoutInflater.from(context),
+            this,
         )
     }
 
@@ -117,6 +119,15 @@ class BadgeButton : FrameLayout {
 
     fun setTypeFace(typeface: Typeface) {
         binding.tvBadge.typeface = typeface
+    }
+
+    fun setBadgeDrawableTint(@ColorInt color: Int) {
+        DrawableCompat.setTint(
+            binding
+                .tvBadge
+                .background,
+            color
+        )
     }
 
     //<editor-fold desc="deprecated methods">
